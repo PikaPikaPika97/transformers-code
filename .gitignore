@@ -1,0 +1,105 @@
+# ==================== Python ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+*.whl
+
+# ==================== 虚拟环境 ====================
+.venv/
+.conda/
+.python-version
+
+# ==================== uv ====================
+# uv.lock 保留以确保可复现性
+
+# ==================== IDE / 编辑器 ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==================== 操作系统 ====================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==================== 模型权重文件 ====================
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.msgpack
+*.onnx
+
+# ==================== 预训练模型 & Tokenizer 目录 ====================
+**/rbt3/
+**/roberta_tokenizer/
+**/skywork_tokenizer/
+**/models_for_ner/
+
+# ==================== 训练 Checkpoints ====================
+**/checkpoints/
+**/checkpoint-*/
+
+# ==================== PEFT 适配器 ====================
+**/loraA/
+**/loraB/
+**/lora*/
+**/bitfit*/
+adapter_*.json
+adapter_model.*
+
+# ==================== HuggingFace Datasets 缓存 ====================
+*.arrow
+**/dataset_info.json
+**/dataset_dict.json
+**/state.json
+**/cache-*.arrow
+
+# ==================== 训练数据集（大文件）====================
+# CSV 数据集
+**/ChnSentiCorp_htl_all.csv
+**/law_faq.csv
+**/train_pair_1w.json
+**/cmrc2018_trial.json
+
+# 数据集目录
+**/all_data/
+**/processed_data/
+**/ner_data/
+**/my_peoples_daily_ner_dataset/
+**/peoples_daily_ner_raw/
+**/mrc_data/
+**/c3/
+**/wiki_cn_filtered/
+**/nlpcc_2017/
+**/alpaca_data_zh/
+
+# ==================== 训练日志 & TensorBoard ====================
+runs/
+logs/
+events.out.tfevents.*
+trainer_state.json
+training_args.bin
+
+# ==================== Jupyter Notebook ====================
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ==================== 演示文稿（通常较大）====================
+*.pptx  # 如需忽略 PPT 可取消注释
+
+# ==================== 临时文件 ====================
+*.tmp
+*.bak
+*.log
+*.cache
