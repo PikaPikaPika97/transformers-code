@@ -24,10 +24,22 @@ dependencies = [
     "transformers>=5.9.0",
 ]
 
+# 清华源 —— 主索引，最高优先级
+[[tool.uv.index]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+
+# PyTorch CUDA 索引 —— 仅用于 torch 系列包
 [[tool.uv.index]]
 name = "pytorch-cu126"
 url = "https://download.pytorch.org/whl/cu126"
 explicit = true
+
+# PyPI 官方源 —— 兜底，默认最低优先级
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+default = true
 
 [tool.uv.sources]
 torch = [ { index = "pytorch-cu126" } ]
