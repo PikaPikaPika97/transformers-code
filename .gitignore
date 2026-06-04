@@ -84,6 +84,9 @@ adapter_model.*
 **/nlpcc_2017/
 **/alpaca_data_zh/
 
+# ==================== NLP 工具数据 ====================
+**/nltk_data/
+
 # ==================== 训练日志 & TensorBoard ====================
 runs/
 logs/
