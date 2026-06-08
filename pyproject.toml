@@ -16,6 +16,7 @@ dependencies = [
     "pandas>=3.0.3",
     "pillow>=12.2.0",
     "requests>=2.34.2",
+    "rouge-chinese>=1.0.3",
     "scikit-learn>=1.8.0",
     "sentencepiece>=0.2.1",
     "seqeval>=1.2.2",
