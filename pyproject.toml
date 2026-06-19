@@ -26,11 +26,6 @@ dependencies = [
     "transformers>=5.9.0",
 ]
 
-# 清华源 —— 主索引，最高优先级
-[[tool.uv.index]]
-name = "tuna"
-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
-
 # 普通包优先级：清华源 -> 阿里源 -> 华为源 -> PyPI
 [[tool.uv.index]]
 name = "tuna"
